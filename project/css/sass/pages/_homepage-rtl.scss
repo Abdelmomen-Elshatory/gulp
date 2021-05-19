@@ -1,0 +1,40 @@
+/* Start Why Dream */
+.why-dream {
+    .first {
+        .one {
+            border-left: 1px solid #c4bbbb;
+            border-right: none;
+            
+            @media (max-width: 767px) {
+                border-left: none ;
+            }
+        }
+        .two {
+            border-left: 1px solid #c4bbbb;
+            border-right: none;
+            @media (max-width: 767px) {
+                border-left: none ;
+            }
+        }
+    }
+    .second {
+        .one {
+            border-left: 1px solid #c4bbbb;
+            border-right: none;
+            @media (max-width: 767px) {
+                border-left: none ;
+            }
+        }
+        .two {
+            border-left: 1px solid #c4bbbb;
+            border-right: none;
+            @media (max-width: 767px) {
+                border-left: none ;
+            }
+        }
+    }
+}
+
+/* End Why Dream */
+
+

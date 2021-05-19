@@ -1,0 +1,219 @@
+.upload {
+    label {
+        width: 100px;
+    }
+    .first-main {
+        form {
+            .btn-slid  {
+                padding-top: 100px;
+                margin-bottom: 30px;
+                @media (max-width: 767px) {
+                    width: 181px;
+                    left: 50%;
+                    margin-left: -90px;
+                    position: relative;
+                }
+                @media (max-width: 575px) {
+                    padding-top: 70px;
+                }
+                button {
+                    color: #fff;
+                    padding: 15px 40px;
+                    font-size: 19px;
+                    width: fit-content;
+                    margin-right: 20px;
+                    @media (max-width: 767px) {
+                        display: block;
+                        margin-bottom: 10px;
+                        margin-right: 0;
+                        width: 200px;
+                    }
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+                .first {
+                    background-color: #232323;
+                }
+                .second {
+                    background-color: #2D88E2;
+                }
+                .third {
+                    background-color: $mainColor;
+                    color: #000;
+                }
+            }
+            .label-slid {
+                position: relative;
+                left: 50%;
+                margin-left: -278px;
+                width: 50%;
+                @media (max-width: 1199px) {
+                    margin-left: -233px;
+                }
+                @media (max-width: 991px) {
+                    margin-left: -172px;
+                }
+                @media (max-width: 767px) {
+                    margin-left: -128px;
+                }
+                @media (max-width: 575px) {
+                    width: fit-content;
+                    margin-left: -90px;
+                }
+                label {
+                    font-size: 25px;
+                    margin-right: 20px;
+                }
+                input {
+                    @include form-uplod;
+                    @media (max-width: 767px) {
+                        display: block;
+                        margin-left: 7%;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+    .second-main {
+        .nav-edit {
+            position: relative;
+            left: 50%;
+            margin-left: -143px;
+            width: fit-content;
+            @media (max-width: 767px) {
+                margin-top: 50px;
+            }
+            @media (max-width: 575px) {
+                margin-left: -100px;
+                width: fit-content;
+            }
+            .tab {
+                border: none;
+                a {
+                    color: #AAAAAA;
+                    border-bottom: 1px solid #AAAAAA;
+                    display: block;
+                    &:hover {
+                        text-decoration:none;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                    }
+                    @media (max-width: 575px) {
+                        font-size: 11px;
+                    }
+                }
+                .active {
+                    border: none;
+                    color: $mainColor;
+                    border-bottom: .5px solid $mainColor;
+                }
+            }
+        }
+        .first-form {
+            margin-top: 30px;
+            div {
+                width: 50%;
+                left: 50%;
+                margin-left: -268px;
+                position: relative;
+                @media (max-width: 1199px) {
+                    margin-left: -222px;
+                }
+                @media (max-width: 991px) {
+                    margin-left: -162px;
+                }
+                @media (max-width: 767px) {
+                    margin-left: -135px;
+                }
+                @media (max-width: 575px) {
+                    width: 265px;
+                    margin-left: -132pxpx;
+                }
+            }
+            label {
+                font-size: 15px;
+            }
+            select {
+                @include form-uplod;
+            }
+            input {
+                @include form-uplod;
+            }
+            button {
+                border: 1px solid $mainColor;
+                color: $mainColor;
+                padding: 10px 65px;
+                margin-top: 40px;
+                margin-left: 10%;
+                @media (max-width: 1200px) {
+                    margin-left: 20%;
+                }
+                @media (max-width: 767px) {
+                    margin-left: 0;
+                }
+            }
+        }
+        .second-form {
+            margin-top: 30px;
+            position: relative;
+            left: 50%;
+            margin-left: -278px;
+            width: 50%;
+            @media (max-width: 1199px) {
+                margin-left: -233px;
+            }
+            @media (max-width: 991px) {
+                margin-left: -172px;
+            }
+            @media (max-width: 767px) {
+                margin-left: -128px;
+            }
+            @media (max-width: 575px) {
+                width: fit-content;
+                margin-left: -100px;
+            
+            }
+            @media (max-width: 767px) {
+                // margin-left: 5%;
+            }
+            @media (max-width: 575px) {
+                // margin-left: 5%;
+            }
+            label {
+                font-size: 22px;
+                margin-right: 18px;
+            }
+            input {
+                @include form-uplod;
+                @media (max-width: 767px) {
+                    display: block;
+                    margin-left: 7%;
+                    width: 80%;
+                }
+                @media (max-width: 575px) {
+                    display: block;
+                    margin-left: 7%;
+                    width: 80%;
+                }
+            }
+            button {
+                width: 204px;
+                height: 45px;
+                border: 1px solid $mainColor;
+                color: $mainColor;
+                padding: 10px 65px;
+                margin-top: 40px;
+                margin-left: 10%;
+                @media (max-width: 1200px) {
+                    margin-left: 20%;
+                }
+                @media (max-width: 767px) {
+                    margin-left: -5%;
+                }
+            }
+        }
+    }
+}

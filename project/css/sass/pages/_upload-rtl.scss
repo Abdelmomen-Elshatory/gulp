@@ -1,0 +1,104 @@
+.upload {
+    .first-main {
+        form {
+            .btn-slid {
+                @media (max-width: 767px) {
+                    right: 50%;
+                    margin-right: -90px;
+                }
+            }
+            .label-slid {
+                right: 50%;
+                margin-right: -278px;
+                @media (max-width: 1199px) {
+                    margin-right: -233px;
+                }
+                @media (max-width: 991px) {
+                    margin-right: -172px;
+                }
+                @media (max-width: 767px) {
+                    margin-right: -92px;
+                }
+                @media (max-width: 575px) {
+                    margin-right: -70px;
+                }
+                label {
+                    margin-left: 35px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .second-main {
+        .nav-edit {
+            right: 50%;
+            margin-right: -143px;
+            @media (max-width: 575px) {
+                margin-right: -90px;
+            }
+        }
+        .first-form {
+            div {
+                right: 50%;
+                margin-right: -268px;
+                @media (max-width: 1199px) {
+                    margin-right: -222px;
+                }
+                @media (max-width: 991px) {
+                    margin-right: -162px;
+                }
+                @media (max-width: 767px) {
+                    margin-right: -135px;
+                }
+                @media (max-width: 575px) {
+                    margin-right: -132px;
+                }
+            }
+            button {
+                margin-right: 10%;
+                @media (max-width: 1200px) {
+                    margin-right: 20%;
+                }
+                @media (max-width: 767px) {
+                    margin-right: 0;
+                }
+            }
+        }
+        .second-form {
+            right: 50%;
+            margin-right: -278px;
+            @media (max-width: 1199px) {
+                margin-right: -233px;
+            }
+            @media (max-width: 991px) {
+                margin-right: -172px;
+            }
+            @media (max-width: 767px) {
+                margin-right: -110px;
+            }
+            @media (max-width: 575px) {
+                margin-right: -92px;
+            }
+            label {
+                margin-left: 22px;
+            }
+            input {
+                @media (max-width: 767px) {
+                    margin-right: 7%;
+                }
+                @media (max-width: 575px) {
+                    margin-right: 7%;
+                }
+            }
+            button {
+                margin-right: 10%;
+                @media (max-width: 1200px) {
+                    margin-right: 20%;
+                }
+                @media (max-width: 767px) {
+                    margin-right: -13%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+section(class="contact-us text-capitalize text-white text-center")
+    .container
+        .row
+            div(class="col-lg-6 col-sm-12 info")
+                img(class="img-responsive" src="images/dream-white-logo.png" alt="logo")
+                .contact-info
+                    .email
+                        i(class="fa fa-envelope-o")
+                        span email: 
+                        .
+                            mail@dreamtv.com
+                    .phone
+                        i(class="fa fa-volume-control-phone")
+                        span phone: 
+                        .
+                            (123) 4567851490
+                hr
+                .rule
+                    .terms
+                        a(href="terms.html") terms of service
+                    .policy
+                        a(href="policy.html") Privacy Policy
+            div(class="col-lg-6 col-sm-12 forms")
+                h2 contact us
+                form(action="")
+                    div(class="form-group group")
+                        input(name="first_name" type="text" class="form-control" placeholder="Your Name (Required)" id="exampleInputPassword1")
+                    div(class="form-group group")
+                        input(name="email" type="email" class="form-control" placeholder="Email (Required)" id="exampleInputPassword2")
+                    div(class="form-group group")
+                        input(name="subject" type="text" class="form-control" placeholder="Subject" id="exampleInputPassword2")
+                    div(class="form-group group")
+                        textarea(name="teaxtarea" class="form-control" placeholder="Your Message" id="exampleFormControlTextarea1" rows="3")
+                    button(type="submit" class="btn btn-primary") send

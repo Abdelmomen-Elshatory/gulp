@@ -1,0 +1,12 @@
+footer {
+    background-color: #1C2023;
+    height: 100px;
+    p {
+        color: #FFFFFF;
+        margin-bottom: 0;
+        padding-top: 38px;
+        @media (max-width:575px) {
+            font-size: 15px;
+        }
+    }
+}

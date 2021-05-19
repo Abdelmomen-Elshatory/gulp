@@ -1,0 +1,245 @@
+/* Start Slider */
+.slider {
+    background-image: url(../images/watch/TV.jpg);
+    background-size: cover;
+    background-position: center top;
+    height: 735px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    @media (max-width: 576px) {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .info {
+        margin: 0;
+        h1 {
+            color: #000;
+            span {
+                color: $mainColor;
+            }
+            @media (max-width: 576px) {
+                font-size: 30px;
+            }
+        }
+        p {
+            font-size: 18px;
+            width: 44%;
+            margin-left: 28%;
+            margin-right: 28%;
+            margin-bottom: 40px;
+            @media (max-width: 767px) {
+                // width: 67%;
+                font-size: 20px;
+            }
+        }
+        button {
+            width: 160px;
+            height: 52px;
+            font-size: 20px;
+            border: 1px solid $mainColor;
+            &:first-of-type {
+                margin-right: 20px;
+                color: $mainColor;
+                @media (max-width: 576px) {
+                    padding: 10px 20px;
+                    display: block;
+                    position: relative;
+                    margin-left: -80px;
+                    left: 50%;
+                    margin-bottom: 20px;
+                }
+            }
+            &:last-of-type {
+                background-color: $mainColor;
+                color: #fff;
+                @media (max-width: 576px) {
+                    padding: 10px 52px;
+                    display: block;
+                    position: relative;
+                    margin-left: -80px;
+                    left: 50%;
+                }
+            }
+        }
+    }
+}
+
+/* End Slider */
+
+/* Start About Dream */
+.about-dream {
+    margin-bottom: 100px;
+    @media (max-width: 576px) {
+        margin-bottom: 50px;
+    }
+    h2 {
+        margin-bottom: 20px;
+        span {
+            color: $mainColor;
+        }
+        @media (max-width: 992px) {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 767px) {
+            margin-top: 20px;
+        }
+    }
+    p {
+        width: 69%;
+        font-size: 18px;
+        display: inline-block;
+        overflow: auto;
+        @media (max-width: 1199px) {
+            width: 85%;
+        }
+        @media (max-width: 992px) {
+            width: 95%;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+    hr {
+        @include home-hr;
+    }
+}
+
+/* End About Dream */
+
+/* Start Why Dream */
+.why-dream {
+    h2 {
+        margin-bottom: 80px;
+        span {
+            color: $mainColor;
+        }
+        @media (max-width: 576px) {
+            font-size: 25px;
+            margin-bottom: 45px;
+        }
+    }
+    .first {
+        border-bottom: 1px solid #c4bbbb;
+        .one {
+            border-right: 1px solid #c4bbbb;
+            
+            @media (max-width: 767px) {
+                border-right: none ;
+            }
+        }
+        .two {
+            border-right: 1px solid #c4bbbb;
+            @media (max-width: 767px) {
+                border-right: none ;
+            }
+        }
+        p {
+            padding-bottom: 50px;
+        }
+        i {
+            color: $mainColor;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 767px) {
+            border-bottom: none ;
+        }
+    }
+    .second {
+        .one {
+            border-right: 1px solid #c4bbbb;
+            @media (max-width: 767px) {
+                border-right: none ;
+            }
+        }
+        .two {
+            border-right: 1px solid #c4bbbb;
+            @media (max-width: 767px) {
+                border-right: none ;
+            }
+        }
+        i {
+            color: $mainColor;
+            padding-top: 50px;
+        }
+    }
+    hr {
+        @include home-hr;
+    }
+}
+
+/* End Why Dream */
+
+/* Start App Gallary */
+.gallary {
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 80px;
+        span {
+            color: $mainColor;
+        }
+    }
+    .our-carousel {
+        width: 72%;
+        margin: auto;
+        .our-indicators {
+            bottom: -60px;
+            li {
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                opacity: 1;
+                background-color: #DEDEDE;
+                &.active {
+                    background-color: $mainColor;
+                }
+            }
+        }
+        .our-inner {
+            div {
+                height: 500px;
+                    @media (max-width: 991px) {
+                        height: 400px;
+                    }
+                    @media (max-width: 767px) {
+                        height: 300px;
+                    }
+                    @media (max-width: 575px) {
+                        height: 150px;
+                    }
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        .arrow {
+            opacity: 1;
+            i {
+                color: $mainColor;
+                @media (max-width: 991px) {
+                    font-size: 50px;
+                }
+                @media (max-width: 575px) {
+                    font-size: 30px;
+                }
+            }
+        }
+        .le-arrow {
+            left: -120px;
+            @media (max-width: 991px) {
+                left: -75px;
+            }
+            @media (max-width: 575px) {
+                left: -45px;
+            }
+        }
+        .ri-arrow {
+            right: -120px;
+            @media (max-width: 991px) {
+                right: -75px;
+            }
+            @media (max-width: 575px) {
+                right: -45px;
+            }
+        }
+    }
+}

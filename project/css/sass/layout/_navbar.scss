@@ -1,0 +1,47 @@
+.our-navbar {
+    .logo {
+        @media (max-width: 575px) {
+            width: 60%;
+        }
+        img {
+            @media (max-width: 575px) {
+                width: 100%;
+            }
+        }
+    }
+    .collapse {
+        .nav-ul {
+            li {
+                margin-right: 20px;
+                a {
+                    color: #000 !important;
+                    font-size: 17px;
+                    @media (max-width: 991px) {
+                        font-size: 14px;
+                    }
+                    @media (max-width: 767px) {
+                        padding-left: 10px;
+                    }
+                }
+                &:last-of-type {
+                    margin-right: 40px;
+                    div {
+                        left: -5px;
+                    }
+                }
+            }
+            .active {
+                a {
+                    background-color: $mainColor;
+                    border-radius: 4px;
+                }
+            }
+            .arrow {
+                &::after {
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+
+}

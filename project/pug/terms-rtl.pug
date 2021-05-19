@@ -1,0 +1,53 @@
+doctype html
+html(lang="en" dir="rtl")
+    head
+        include includes/head-rtl.pug
+    body
+        //- Start Navbar
+        nav(class="our-navbar navbar navbar-expand-md navbar-light bg-white")
+            a(class="navbar-brand logo" href="index-rtl.html")
+                img(src="images/DreamTv-player.png" alt="logo")
+            button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
+                span(class="navbar-toggler-icon")
+            div(class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown")
+                ul(class="navbar-nav nav-ul")
+                    li(class="nav-item")
+                        a(class="nav-link text-capitalize" href="index-rtl.html") الرئيسية
+                    li(class="nav-item")
+                        a(class="nav-link text-capitalize" href="upload-rtl.html") رفع قائمتى
+                    li(class="nav-item")
+                        a(class="nav-link text-capitalize" href="activation-rtl.html") التفعيل
+                    li(class="nav-item")
+                        a(class="nav-link text-capitalize" href="about-rtl.html") من نحن
+                    li(class="nav-item dropdown")
+                        |
+                        |
+                        a(class="nav-link text-capitalize dropdown-toggle arrow" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") اللغة
+                        div(class="dropdown-menu lang" aria-labelledby="navbarDropdownMenuLink")
+                            |
+                            |
+                            a(href="index.html" class="dropdown-item text-capitalize english" data-lang="en") الإنجليزية
+                            |
+                            |
+                            a(href="index-rtl.html" class="dropdown-item text-capitalize arabic" data-lang="ar") العربية
+        //- End Navbar
+
+    //- Start Terms
+    section(class="terms")
+        .container
+            h2(class="text-capitalize") شروط استخدام برنامج دريم تى فى
+            p The main purpose of your About Us page is to give your visitors a glimpse into who you are as a person or a business (or sometimes both). As users discover your brand, they need to distinguish what sets you apart and makes you… you. This often requires finding the right balance between compelling content and a design carefully planned to look the part. Conveying your identity in a fun and approachable – but also reliable and informative – way is challenging.
+            p The main purpose of your About Us page is to give your visitors a glimpse into who you are as a person or a business (or sometimes both). As users discover your brand, they need to distinguish what sets you apart and makes you… you. This often requires finding the right balance between compelling content and a design carefully planned to look the part. Conveying your identity in a fun and approachable – but also reliable and informative – way is challenging.
+    //- Start Terms
+
+    //- Start Contact Us
+    include includes/contact-rtl.pug
+    //- End Contact Us
+
+    //- Start Footer
+    include includes/footer-rtl.pug
+    //- End Footer
+    
+    //- Start Scripts
+    include includes/scripts.pug
+    //- End Scripts

@@ -1,0 +1,115 @@
+doctype html
+html(lang="en" dir="rtl")
+    head
+        include includes/head-rtl.pug
+    body
+        //- Start Navbar
+        nav(class="our-navbar navbar navbar-expand-md navbar-light bg-white")
+            a(class="navbar-brand logo" href="index-rtl.html")
+                img(src="images/DreamTv-player.png" alt="logo")
+            button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
+                span(class="navbar-toggler-icon")
+            div(class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown")
+                ul(class="navbar-nav nav-ul")
+                    li(class="nav-item")
+                        a(class="nav-link text-capitalize" href="index-rtl.html") الرئيسية
+                    li(class="nav-item active")
+                        a(class="nav-link text-capitalize" href="upload-rtl.html") رفع قائمتى
+                    li(class="nav-item")
+                        a(class="nav-link text-capitalize" href="activation-rtl.html") التفعيل
+                    li(class="nav-item")
+                        a(class="nav-link text-capitalize" href="about-rtl.html") من نحن
+                    li(class="nav-item dropdown")
+                        |
+                        |
+                        a(class="nav-link text-capitalize dropdown-toggle arrow" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") اللغة
+                        div(class="dropdown-menu lang" aria-labelledby="navbarDropdownMenuLink")
+                            |
+                            |
+                            a(href="index.html" class="dropdown-item text-capitalize english" data-lang="en") الإنجليزية
+                            |
+                            |
+                            a(href="index-rtl.html" class="dropdown-item text-capitalize arabic" data-lang="ar") العربية
+        //- End Navbar
+
+        //- Start Upload Page
+        div(class="upload text-center")
+            .container
+                .row
+                    .col
+                        div(class="first-main text-center")
+                            form(action="")
+                                .btn-slid
+                                    button(class="btn first text-capitalize")
+                                        i(class="fa fa-refresh" aria-hidden="true")
+                                        |
+                                        |
+                                        .
+                                            تحديث
+                                    button(class="btn second text-capitalize")
+                                        i(class="fa fa-repeat" aria-hidden="true")
+                                        |
+                                        |
+                                        .
+                                            إعادة تعيين
+                                    button(class="btn third text-capitalize")
+                                        i(class="fa fa-share" aria-hidden="true")
+                                        |
+                                        |
+                                        .
+                                            إرسال
+                                div(class="form-group label-slid")
+                                    label(class="text-uppercase" for="exampleInputEmail3") tv mac 
+                                    input(type="text" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp")/
+                        .second-main
+                            nav(class="nav-edit")
+                                div(class="nav nav-tabs tab text-capitalize" id="nav-tab" role="tablist")
+                                    |
+                                    |
+                                    a(class="nav-link nav-li" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true") معلومات اكستريم كود
+                                    |
+                                    |
+                                    a(class="nav-link nav-li active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false") رابط قائمة التشغيل
+                            div(class="tab-content" id="nav-tabContent")
+                                div(class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab")
+                                    form(class="first-form text-capitalize")
+                                        .form-group
+                                            label(for="exampleFormControlSelect1") schema
+                                            select(class="form-control" id="exampleFormControlSelect1")
+                                                option(value="") http
+                                                option(value="") 2
+                                                option(value="") 3
+                                                option(value="") 4
+                                                option(value="") 5
+                                        div(class="form-group item1")
+                                            label(for="exampleInputEmail1") host / IP
+                                            input(type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp")
+                                        div(class="form-group item2")
+                                            label(for="exampleInputPassword1") port n
+                                            input(value="80" type="text" class="form-control" id="exampleInputPassword1")
+                                        div(class="form-group item3")
+                                            label(for="exampleInputEmail2") username
+                                            input(type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp")
+                                        div(class="form-group item4")
+                                            label(for="exampleInputPassword2") password
+                                            input(type="password" class="form-control" id="exampleInputPassword2")
+                                        button(type="submit" class="btn text-capitalize") ادفع الان
+                                div(class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab")
+                                    form(class="second-form")
+                                        .form-group
+                                            label(class="text-uppercase" for="exampleInputEmail1") m3u url
+                                            input(type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp")
+                                        button(type="submit" class="btn text-capitalize") ادفع الان
+        //- End Upload Page
+
+        //- Start Contact Us
+        include includes/contact-rtl.pug
+        //- End Contact Us
+
+        //- Start Footer
+        include includes/footer-rtl.pug
+        //- End Footer
+        
+        //- Start Scripts
+        include includes/scripts.pug
+        //- End Scripts

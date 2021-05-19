@@ -1,0 +1,46 @@
+.contact-us {
+    .info {
+        .contact-info {
+            margin-left: 0;
+            margin-right: 60px;
+            @media (max-width:1199px) {
+                margin-left: 0;
+                margin-right: 90px;
+            }
+            @media (max-width:991px) {
+                margin-left: 0;
+                margin-right: 200px;
+            }
+            @media (max-width:767px) {
+                margin-left: 0;
+                margin-right: 120px;
+            }
+            @media (max-width:575px) {
+                font-size: 13px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        .rule {
+            div  {
+                a {
+                    &::before {
+                        content: '\f053';
+                    }
+                }
+            }
+        }
+    }
+    .forms {
+        @media (max-width:991px) {
+        }
+        .group {
+            input {
+                &::placeholder {
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+}

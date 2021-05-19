@@ -1,0 +1,27 @@
+nav(class="our-navbar navbar navbar-expand-md navbar-light bg-white")
+    a(class="navbar-brand logo" href="index-rtl.html")
+        img(src="images/DreamTv-player.png" alt="logo")
+    button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
+        span(class="navbar-toggler-icon")
+    div(class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown")
+        ul(class="navbar-nav nav-ul")
+            block active-li
+            li(class="nav-item active")
+                a(class="nav-link text-capitalize" href="index-rtl.html") الرئيسية
+            li(class="nav-item")
+                a(class="nav-link text-capitalize" href="upload-rtl.html") رفع قائمتى
+            li(class="nav-item")
+                a(class="nav-link text-capitalize" href="activation-rtl.html") التفعيل
+            li(class="nav-item")
+                a(class="nav-link text-capitalize" href="about-rtl.html") من نحن
+            li(class="nav-item dropdown")
+                |
+                |
+                a(class="nav-link text-capitalize dropdown-toggle arrow" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") اللغة
+                div(class="dropdown-menu lang" aria-labelledby="navbarDropdownMenuLink")
+                    |
+                    |
+                    a(href="index.html" class="dropdown-item text-capitalize english" data-lang="en") الإنجليزية
+                    |
+                    |
+                    a(href="index-rtl.html" class="dropdown-item text-capitalize arabic" data-lang="ar") العربية

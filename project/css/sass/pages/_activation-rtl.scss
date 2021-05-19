@@ -1,0 +1,17 @@
+.activation {
+    img {
+        right: 84%;
+        @media (max-width: 1199px) {
+            right: 74%;
+        }
+        @media (max-width: 991px) {
+            right: 64%;
+        }
+        @media (max-width: 768px) {
+            right: 54%;
+        }
+        @media (max-width: 575px) {
+            right: 34%;
+        }
+    }
+}

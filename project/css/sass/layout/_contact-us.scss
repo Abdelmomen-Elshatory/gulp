@@ -1,0 +1,101 @@
+.contact-us {
+    background-color: #212529;
+    margin-top: 100px;
+    padding-bottom: 40px;
+    padding-top: 60px;
+    .info {
+        img {
+            margin-left: 30px;
+            margin-right: 30px;
+            @media (max-width: 575px) {
+                margin: auto;
+                width: 90%;
+            }
+        }
+        .contact-info {
+            margin-top: 30px;
+            font-size: 25px;
+            text-align: start;
+            margin-left: 105px;
+            @media (max-width:1199px) {
+                font-size: 20px;
+                margin-left: 90px;
+            }
+            @media (max-width:991px) {
+                margin-left: 210px;
+            }
+            @media (max-width:767px) {
+                margin-left: 120px;
+            }
+            @media (max-width:575px) {
+                font-size: 15px;
+                margin-left: 0;
+                text-align: center;
+            }
+            .email {
+                margin-bottom: 15px;
+            }
+            i {
+                margin-right: 10px;
+                color: $mainColor;
+                width: 25px;
+            }
+        }
+        hr {
+            background-color: #424242;
+            width: 80%;
+            margin-left: 10%;
+            @media (max-width:991px) {
+                width: 70%;
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+        }
+        .rule {
+            div  {
+                display: inline-block;
+                margin-right: 30px;
+                margin-left: 30px;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    &::before {
+                        content: '\f054';
+                        font-family: FontAwesome;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+    .forms {
+        @media (max-width:991px) {
+            margin-top: 60px;
+        }
+        .group {
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+            input {
+                background-color: #414344;
+                border: none;
+            }
+            textarea {
+                background-color: #414344;
+                border: none;
+            }
+        }
+        button {
+            background-color: $mainColor;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 40px ;
+            border-radius: 0;
+        }
+    }
+
+}
