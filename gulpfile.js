@@ -17,9 +17,7 @@ let zip = require('gulp-zip');        //لضغط ملفات المشروع فى 
 // HTML Task
 gulp.task("html", function () {
     return gulp.src("project/PugJs/*.pug")
-    .pipe(sourcemaps.init())
     .pipe(pug({pretty: true}))
-    .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("dist"))
     .pipe(notify("Html Is Done"))
     .pipe(livereload());
