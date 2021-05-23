@@ -1,0 +1,24 @@
+@import "sass/helpers/variables";
+@import "sass/helpers/mixins";
+@import "sass/layout/navbar";
+@import "sass/pages/homepage";
+@import "sass/pages/upload";
+@import "sass/pages/activation";
+@import "sass/pages/about";
+@import "sass/pages/policy";
+@import "sass/pages/terms";
+@import "sass/layout/contact-us";
+@import "sass/layout/footer";
+
+/* Start global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Baloo Da 2', cursive;;
+}
+
+/* End global */
