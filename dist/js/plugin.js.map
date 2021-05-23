@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["plugin.js"],"sourcesContent":["console.log($(\".phone\").text());\r\nconsole.log(\"object\");"],"file":"plugin.js"}
