@@ -1,0 +1,12 @@
+
+
+
+
+
+npm i static-server --save
+npm i gulp-livereload --save-dev
+npm i gulp-sourcemaps --save-dev
+npm install --save-dev gulp-uglify
+npm i gulp-notify --save-dev
+$ npm install --save-dev gulp-zip
+
