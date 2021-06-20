@@ -1,15 +1,25 @@
-let gulp = require("gulp");    // Gulp إستدعاء مكتبة
-let concat = require('gulp-concat'); // لجمع عدة صفحات فى صفحة واحدة  Concat إستدعاء مكتبة 
-let autoprefixer = require('gulp-autoprefixer');  // تلقائيا Autoprefixer تستخدم لوضع 
-let sass = require('gulp-sass'); // sass لكود format تستخدم لعمل
-let pug = require('gulp-pug');   // pug لكود format تستخدم لعمل
-let livereload = require('gulp-livereload');   // livereload استدعاء مكتبة
-let sourcemaps = require('gulp-sourcemaps');   // sourcemap  استدعاء مكتبة 
-let uglify = require('gulp-uglify');   //  js لعمل ضغط لملفات uglify استدعاء مكتبة
-let notify = require("gulp-notify");  // taskلاظهار رسالة بتنفيذ ال  notify استدعاء مكتبة 
-let zip = require('gulp-zip');        //لضغط ملفات المشروع فى ملف واحد zip  استدعاء مكتبة 
-
-
+// Gulp إستدعاء مكتبة                                               npm install --save-dev gulp 
+let gulp = require("gulp");    
+// لجمع عدة صفحات فى صفحة واحدة  Concat إستدعاء مكتبة             npm i --save-dev gulp-concat 
+let concat = require('gulp-concat'); 
+// تلقائيا Autoprefixer تستخدم لوضع                                 npm i --save-dev gulp-autoprefixer 
+let autoprefixer = require('gulp-autoprefixer');  
+// sass لكود format تستخدم لعمل                                     npm install --save-dev gulp-sass 
+let sass = require('gulp-sass'); 
+// pug لكود format تستخدم لعمل                                      npm i gulp-pug --save-dev    
+let pug = require('gulp-pug');  
+// livereload استدعاء مكتبة                                         npm i live-reload --save-dev 
+let livereload = require('gulp-livereload');
+// sourcemap  استدعاء مكتبة                                         npm i source-map --save-dev 
+let sourcemaps = require('gulp-sourcemaps');   
+//  js لعمل ضغط لملفات uglify استدعاء مكتبة                        npm install --save-dev gulp-uglify 
+let uglify = require('gulp-uglify');   
+// taskلاظهار رسالة بتنفيذ ال  notify استدعاء مكتبة                 npm install --save-dev gulp-notify      
+let notify = require("gulp-notify"); 
+//لضغط ملفات المشروع فى ملف واحد zip  استدعاء مكتبة                npm install --save-dev gulp-zip            
+let zip = require('gulp-zip');        
+//لضغط الصور imagemin استدعاء مكتبة                                  npm install --save-dev gulp-imagemin 
+let imagemin = require('gulp-imagemin');
 
 
 
@@ -64,7 +74,6 @@ gulp.task("watch" , function () {
     gulp.watch("project/css/**/*.scss",  gulp.series('css'))
     gulp.watch("project/js/*.js",  gulp.series('js'))
     gulp.watch("dist/**/*.*",  gulp.series('compress'))
-
 
 })
 
