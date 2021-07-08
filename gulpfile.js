@@ -10,7 +10,7 @@ let sass = require('gulp-sass');
 let pug = require('gulp-pug');  
 // livereload استدعاء مكتبة                                         npm i live-reload --save-dev 
 let livereload = require('gulp-livereload');
-// sourcemap  استدعاء مكتبة                                         npm i source-map --save-dev 
+// sourcemap  استدعاء مكتبة                                         npm i gulp-sourcemaps --save-dev 
 let sourcemaps = require('gulp-sourcemaps');   
 //  js لعمل ضغط لملفات uglify استدعاء مكتبة                        npm install --save-dev gulp-uglify 
 let uglify = require('gulp-uglify');   
@@ -18,8 +18,8 @@ let uglify = require('gulp-uglify');
 let notify = require("gulp-notify"); 
 //لضغط ملفات المشروع فى ملف واحد zip  استدعاء مكتبة                npm install --save-dev gulp-zip            
 let zip = require('gulp-zip');        
-//لضغط الصور imagemin استدعاء مكتبة                                  npm install --save-dev gulp-imagemin 
-let imagemin = require('gulp-imagemin');
+//لضغط الصور gulp-image استدعاء مكتبة                               npm install --save-dev gulp-image
+let image = require('gulp-image'); 
 
 
 
@@ -55,6 +55,13 @@ gulp.task("js", function () {
     .pipe(notify("Js Is Done"))
     .pipe(livereload());
 })
+
+// Compress Img
+gulp.task('img', function () {
+    gulp.src('img/*')
+        .pipe(image())
+        .pipe(gulp.dest('dist/images'));
+});
 
 
 // Compress Files
